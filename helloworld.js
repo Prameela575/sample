@@ -5,7 +5,7 @@ let bmiform = document.querySelector(".dmi-form");
 bmiform.addEventListener("submit",function(e){
     e.preventDefault();
     const form =e.target;
-    let name =form.querySelector("#name").value;
+    let names =form.querySelector("#name").value;
     let weight = parseFloat(form.querySelector("#weight").value);
     let height = parseFloat(form.querySelector("#height").value);
     let bmi = weight/(height*height);
